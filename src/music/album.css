@@ -1,0 +1,15 @@
+.album {
+  color: #fff;
+}
+.table-responsive {
+  color: #fff;
+}
+.table-responsive .table {
+  color: #fff;
+}
+.table-responsive .table tbody td {
+  border: none;
+}
+.table-responsive .table tbody tr {
+  border-bottom: 1px solid #fff;
+}

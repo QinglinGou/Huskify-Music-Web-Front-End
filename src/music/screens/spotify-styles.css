@@ -1,0 +1,182 @@
+.spotify-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    /*background: linear-gradient(270deg, #121212, #1db954, #121212, #1db954);*/
+    background: #131318;
+    background-size: 400% 400%;
+    animation: glowing 10s ease infinite;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+.spotify-heading {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.spotify-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.spotify-input-label {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.spotify-input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #1db954;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.spotify-input:focus {
+    outline: none;
+    border: 1px solid #1db954;
+}
+
+.spotify-button {
+    width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1db954;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.spotify-button:hover {
+    background-color: #149c4a;
+}
+
+.spotify-button:focus {
+    outline: none;
+}
+
+/* Green glowing points */
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.spotify-input.readOnly {
+    background-color: #000000;
+    color: #676767;
+    cursor: not-allowed;
+}
+
+.spotify-input-group label {
+  color: white;
+}
+
+.likes-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.likes-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.likes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.like-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.like-item:last-child {
+    border-bottom: none;
+}
+
+.track-name {
+    font-weight: 500;
+}
+
+.profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.profile-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.likes-container {
+    flex: 2;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width according to your preference */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.like-card-container {
+    display: inline-block;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.user-activity-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.comment-link {
+    text-decoration: none;
+    color: #1db954;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comment-link:hover {
+    text-decoration: underline;
+}
+
+.comment-textbox {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.comments-container {
+    height: 300px;
+    overflow-y: scroll;
+
+}
